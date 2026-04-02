@@ -202,9 +202,6 @@ impl Log for AndroidLogger {
             ),
             _ => fmt::write(&mut writer, *record.args()),
         };
-
-        // output the remaining message (this would usually be the most common case)
-        writer.flush();
     }
 
     fn flush(&self) {}
