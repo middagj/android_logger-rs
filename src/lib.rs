@@ -73,7 +73,7 @@ use std::mem::MaybeUninit;
 use std::sync::OnceLock;
 
 use crate::arrays::{fill_tag_bytes, uninit_array};
-use crate::platform_log_writer::PlatformLogWriter;
+pub use crate::platform_log_writer::PlatformLogWriter;
 pub use config::Config;
 pub use env_filter::{Builder as FilterBuilder, Filter};
 pub use id::LogId;
